@@ -8,10 +8,23 @@ var started = false ;
 
 var level = 0 ;
 
+var score = 0 ;
+
+var highScore = 0;
+
+window.onload = function(){
+  let scoreFromBrowser = localStorage.getItem("highScore");
+  if (scoreFromBrowser != undefined) {
+    highScore = scoreFromBrowser ;
+  }
+
+}
+
 $(document).keypress(function(){
 
   if (!started){
-    $("#level-title").text("Level "+level);
+    $("#level-title").text("Level "+ level);
+    $("#score").text("Score : "+ score);
     nextSequence();
     started = true;
   }
@@ -74,7 +87,20 @@ function nextSequence(){
 
   userClickedPattern = [];
   level++;
+  if (level===1){
+    score = 0 ;
+  }else {
+    score +=10 ;
+  }
+
+  if ( score > highScore ){
+    highScore = score ;
+  }
+  localStorage.setItem("highScore",highScore);
+
   $("#level-title").text("Level "+level);
+  $("#highScore").text("High Score :  "+highScore);
+  $("#score").text("Score      :  "+score);
   var randomNumber = Math.floor(Math.random()*4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
@@ -85,6 +111,7 @@ function nextSequence(){
 
 function startOver(){
   level=0;
+  score=0;
   gamePattern=[];
   started=false;
 }
