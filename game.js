@@ -114,4 +114,4 @@ function startOver(){
   score=0;
   gamePattern=[];
   started=false;
-}
+}  
