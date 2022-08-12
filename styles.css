@@ -3,6 +3,14 @@ body {
   background-color: #011F3F;
 }
 
+#play{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  margin-bottom: 0px;
+  color: #FEF2BF;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -11,20 +19,45 @@ body {
   color: #FEF2BF;
 }
 
-#highScore {
-  text-align: right;
+hr.style5 {
+background-color: #FEF2BF;
+border-top: 2px dashed #011F3F;
+}
+
+p {
+  font-family: 'Press Start 2P', cursive;
+  margin:  2% 2% 0% 2%;
+  color: #FEF2BF;
+  text-align: left;
+  font-size: 1rem;
+}
+
+h5{
+  font-family: 'Press Start 2P', cursive;
+  margin:  1% 4% 1% 2%;
+  color: #FEF2BF;
+  text-align: left;
+  font-size: 1rem;
+}
+
+h3{
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
   margin:  1% 4% 1% 2%;
   color: #FEF2BF;
 }
 
-#score {
-  text-align: right;
+#steps {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   margin:  1% 4% 1% 2%;
   color: #FEF2BF;
+}
+
+.container2 {
+  display: block;
+  width: 70%;
+  margin: auto;
 }
 
 .container {
