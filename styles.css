@@ -7,6 +7,23 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
+  margin-bottom: 0px;
+  color: #FEF2BF;
+}
+
+#highScore {
+  text-align: right;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin:  1% 4% 1% 2%;
+  color: #FEF2BF;
+}
+
+#score {
+  text-align: right;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin:  1% 4% 1% 2%;
   color: #FEF2BF;
 }
 
